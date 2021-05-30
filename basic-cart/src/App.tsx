@@ -85,8 +85,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-//   NOTES to me: add a search bar on top to search for products by category and display results on page
-//   figure out how to limit the description, or hide it
+
 
 const getProducts = async (): Promise<CartItemType[]> => 
     await (await fetch('https://fakestoreapi.com/products')).json()
