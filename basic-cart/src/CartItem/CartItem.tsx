@@ -23,7 +23,7 @@ const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => (
                     variant="contained" 
                     onClick={() => removeFromCart(item.id)}
                 >
-                    -
+                    Remove
                 </Button>
                 <p>{item.amount}</p>
                 <Button 
@@ -32,7 +32,7 @@ const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => (
                     variant="contained" 
                     onClick={() => addToCart(item)}
                 >
-                    +
+                    Add
                 </Button>
             </div>
         </div>
